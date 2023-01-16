@@ -1,7 +1,7 @@
 package exercise;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.Assert.*;
+//import static org.junit.Assert.*;
 
 import java.util.ArrayList;
 import java.util.List;
