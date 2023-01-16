@@ -19,11 +19,11 @@ public class App {
 		
 		   
 
-			List<String> result = buildAppartmentsList(appartments, 3);
+			List<String> result = buildApartmentsList(appartments, 3);
 			System.out.println(result); 
 	}
 
-	private static List<String> buildAppartmentsList(List<Home> appartments, int i) {
+	static List<String> buildApartmentsList(List<Home> appartments, int i) {
 		// TODO Auto-generated method stub
 		Collections.sort(appartments, new SortByArea());
 		//return null;
