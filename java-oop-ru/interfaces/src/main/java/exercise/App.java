@@ -1,11 +1,9 @@
 package exercise;
 
-import java.util.List;
-import java.util.stream.Collectors;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
-// BEGIN
 public class App {
 
 	public static void main(String[] args) {
@@ -23,10 +21,12 @@ public class App {
 			System.out.println(result); 
 	}
 
-	static List<String> buildApartmentsList(List<Home> appartments, int i) {
+	public static List<String> buildApartmentsList(List<Home> appartments, int i) {
 		// TODO Auto-generated method stub
 		Collections.sort(appartments, new SortByArea());
-		//return null;
+		if (i > appartments.size()) {
+			i = appartments.size();
+		}
 		List<String> result = new ArrayList<String>();
 		for (int j=0; j<i; j++) {
 			result.add(appartments.get(j).toString());
@@ -35,4 +35,3 @@ public class App {
 	}
 
 }
-// END

@@ -1,7 +1,9 @@
 package exercise;
 
 import org.junit.jupiter.api.Test;
-//import static org.junit.Assert.*;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +27,7 @@ class AppTest {
         ));
 
         List<String> result = App.buildApartmentsList(apartments, 3);
-        //assertThat(result).isEqualTo(expected);
+        assertThat(result).isEqualTo(expected);
     }
 
     @Test
@@ -45,7 +47,7 @@ class AppTest {
         ));
 
         List<String> result = App.buildApartmentsList(apartments, 4);
-        //assertThat(result).isEqualTo(expected);
+        assertThat(result).isEqualTo(expected);
 
     }
 
@@ -53,8 +55,8 @@ class AppTest {
     void testBuildApartmentsList3() {
         List<Home> apartments = new ArrayList<>();
         List<String> expected = new ArrayList<>();
-        List<String> result = App.buildApartmentsList(apartments, 10);
-        //assertThat(result).isEqualTo(expected);
+       List<String> result = App.buildApartmentsList(apartments, 10);
+       assertThat(result).isEqualTo(expected);
     }
 
     // BEGIN
