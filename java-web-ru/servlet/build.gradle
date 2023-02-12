@@ -34,8 +34,4 @@ tasks.withType(JavaCompile) {
   options.encoding = "UTF-8"
 }
 
-task getDependencies(type: Copy) {
-  //referring to the 'compile' configuration
-  from configurations.compile, configurations.testCompile
-  into 'libs'
-}
+
